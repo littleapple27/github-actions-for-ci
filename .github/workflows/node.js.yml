@@ -30,7 +30,7 @@ jobs:
           name: webpack artifacts
           path: public/
     - uses: actions/upload-artifact@main
-      with:
+    needs: build
         name: webpack artifacts
         path: public/
     
